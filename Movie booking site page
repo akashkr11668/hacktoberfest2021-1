@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h3>Booking Management System</h3>
+<hr>
+<div class="container">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button class="btn"><i class="fa fa-home"></i> Home</button>
+<button class="btn"><i class="fa fa-bars"></i> Contact us</button>
+<button class="btn"><i class="fa fa-about us"></i> About us</button>
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="D:\project\img1.jpg" alt="img1" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="D:\project\img3.jpg" alt="img2" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="D:\project\img5.jpg" alt="img2" style="width:100%;">
+      </div>
+    </div>
+
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+</div>
+<br>
+<br>
+<div class="container">
+ <div class="row">
+        <div class="col-md-3">
+   
+           <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Cinemas
+               <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">Radhey</a></li>
+                      <li><a href="#">Justice League</a></li>
+                      <li><a href="#">Kong vs Godzilla</a></li>
+       <li><a href="#">Parasite</a></li>
+                  </ul>
+             </div>
+    <br>
+          <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">&nbsp;Timing&nbsp;&nbsp;
+               <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">12PM-3PM</a></li>
+                      <li><a href="#">3PM-6PM</a></li>
+                      <li><a href="#">6PM-9PM</a></li>
+       <li><a href="#">9PM-12PM</a></li>
+                  </ul>
+             </div>
+
+        </div>
+        <div  class="col-md-3"><img onclick="myFunction(1)" src="D:\project\img2.jpg" alt="img1" ></div>
+  <div class="col-md-3"><img onclick="myFunction(2)" src="D:\project\img6.jpg" alt="img1"></div>
+        <div class="col-md-3"><img onclick="myFunction(3)" src="D:\project\img.jpeg" alt="img1"></div>
+
+  
+    </div>
+ </div>
+ <br>
+ <br> 
+<center><p id="movie"></p></center>
+ <script>
+function myFunction(number) {
+ if(number==1)
+ {
+   document.getElementById("movie").innerHTML = "This movie if of Salman and Disha patani";
+ }
+ else if(number==2)
+ {
+       document.getElementById("movie").innerHTML = "This is the snyder verse of Justice League";
+ }
+   else if(number==3)
+ {
+       document.getElementById("movie").innerHTML = "This is the 3rd movie of Godzilla and kong";
+ }
+ 
+}
+</script>
+
+</body>
+</html>
